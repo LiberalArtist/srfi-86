@@ -6,6 +6,8 @@
 
 keywords: [[https://srfi.schemers.org/?keywords=data-structure][Data Structure]], [[https://srfi.schemers.org/?keywords=multiple-value-returns][Multiple-Value Returns]]
 
+library-name: mu-and-nu
+
 This repository hosts [[https://srfi.schemers.org/srfi-86/][SRFI 86]]: MU and NU simulating VALUES & CALL-WITH-VALUES, and their related LET-syntax, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /final/ status.
