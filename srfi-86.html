@@ -1,23 +1,20 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html>
+<html lang="en">
   <head>
     <title>SRFI 86: MU and NU simulating VALUES & CALL-WITH-VALUES, and their related LET-syntax</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/srfi.css" type="text/css" />
+    <link rel="stylesheet" href="https://srfi.schemers.org/srfi.css" type="text/css" />
+    <link href="/favicon.png" rel="icon" sizes="192x192" type="image/png">
   </head>
 
   <body>
 
-<H1>Title</H1>
+<h1><a href="https://srfi.schemers.org/"><img class="srfi-logo" src="https://srfi.schemers.org/srfi-logo.svg" alt="SRFI surfboard logo" /></a>86: MU and NU simulating VALUES & CALL-WITH-VALUES, and their related LET-syntax</h1>
 
-MU and NU simulating VALUES & CALL-WITH-VALUES, and their related LET-syntax
+<p>by Joo ChurlSoo</p>
 
-<H1>Author</H1>
-
-Joo ChurlSoo
-
-<H1>Status</H1>
+<h2>Status</h2>
 
 <p>This SRFI is currently in <em>final</em> status.  Here is <a href="https://srfi.schemers.org/srfi-process.html">an explanation</a> of each status that a SRFI can hold.  To provide input on this SRFI, please send email to <code><a href="mailto:srfi+minus+86+at+srfi+dotschemers+dot+org">srfi-86@<span class="antispam">nospam</span>srfi.schemers.org</a></code>.  To subscribe to the list, follow <a href="https://srfi.schemers.org/srfi-list-subscribe.html">these instructions</a>.  You can access previous messages via the mailing list <a href="https://srfi-email.schemers.org/srfi-86">archive</a>.</p>
 <ul>
@@ -30,7 +27,7 @@ Joo ChurlSoo
   <li>Draft: 2006-04-04--2006-06-01</li>
 </ul>
 
-<h1>Abstract</h1>
+<h2>Abstract</h2>
     
 <p>
 Unlike the <code>values</code>/<code>call-with-values</code> mechanism of
@@ -61,7 +58,7 @@ multiple values.  In addition, they have several new binding forms for
 useful functions such as escape, recursion, etc.
     </p>
 
-<h1>Rationale</h1>
+<h2>Rationale</h2>
 
 <p>
 It is impossible to bind the evaluated result of <code>values</code>
@@ -374,7 +371,7 @@ keyword <code>values</code> like <a href="#SRFI71">SRFI 71</a>.</p>
     </li>
     </ol>
 
-<h1>Specification</h1>
+<h2>Specification</h2>
 
 <pre>
 (mu &lt;expr&gt; ...)			=&gt; (lambda (f) (f &lt;expr&gt; ...))
@@ -671,7 +668,7 @@ These are the same as the named-<code>let</code> (R5RS, 4.2.4) except
 binding specification.  These allow all sorts of bindings in &lt;binding
 spec&gt;.</p>
 
-<h1>Examples</h1>
+<h2>Examples</h2>
 
 <pre>
 (alet ((a (begin (display "1st") 1))
@@ -770,7 +767,7 @@ spec&gt;.</p>
    "cdefghi"
 </pre>
 
-<h1>Implementation</h1>
+<h2>Implementation</h2>
 
 <p>
 The following implementation is written in R5RS hygienic macros and
@@ -1910,7 +1907,7 @@ requires SRFI 23 (Error reporting mechanism).
      (let ((e z)) bd ...))))
 </pre>
 
-<h1>References</h1>
+<h2>References</h2>
 
 <ul>
 <li><a name="R5RS">[R5RS]</a> Richard Kelsey, William Clinger, and Jonathan Rees: Revised(5)
@@ -1929,7 +1926,7 @@ requires SRFI 23 (Error reporting mechanism).
 	<a href="http://www.scsh.net">Link</a></li>
     </ul>
 	    
-<h1>Copyright</h1>
+<h2>Copyright</h2>
 
 Copyright (c) 2006 Joo ChurlSoo.
 <p>
